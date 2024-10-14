@@ -30,7 +30,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
 ## Software Setup
 
 ### 1. Teensy Code
-- **`TeensyCode.ino`**:  
+- **`Final_Project.ino`**:  
   - Collects temperature, heart rate, and shock data from sensors  
   - Transmits data to Raspberry Pi via Bluetooth  
   - Receives commands to control the buzzer
@@ -49,7 +49,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
 
 ## Project Files
 
-- **`TeensyCode.ino`**: Arduino code for Teensy microcontroller  
+- **`Final_Project.ino`**: Arduino code for Teensy microcontroller  
 - **`data_processing.py`**: Raspberry Pi script for data logging, MQTT publishing, and command forwarding  
 - **`sensor_data.csv`**: File where sensor data is logged  
 - **`Project_Presentation.pptx`**: PowerPoint presentation summarizing the project  
@@ -63,7 +63,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
    - Pair the Raspberry Pi with Teensy over Bluetooth.
 
 2. **Upload Code:**
-   - Use Arduino IDE to upload `TeensyCode.ino` to the Teensy microcontroller.
+   - Use Arduino IDE to upload `Final_Project.ino` to the Teensy microcontroller.
 
 3. **Start the Raspberry Pi Script:**
    - Execute `data_processing.py` to receive data, publish it to MQTT, and handle alerts.
