@@ -36,7 +36,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
   - Receives commands to control the buzzer
 
 ### 2. Raspberry Pi Code
-- **`data_processing.py`**:  
+- **`raspbeery_pi_teensy.py`**:  
   - Receives sensor data from Teensy over Bluetooth  
   - Logs sensor data to `sensor_data.csv`  
   - Publishes data to **AWS IoT Core** via MQTT  
@@ -50,7 +50,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
 ## Project Files
 
 - **`Final_Project.ino`**: Arduino code for Teensy microcontroller  
-- **`data_processing.py`**: Raspberry Pi script for data logging, MQTT publishing, and command forwarding  
+- **`raspbeery_pi_teensy.py`**: Raspberry Pi script for data logging, MQTT publishing, and command forwarding  
 - **`sensor_data.csv`**: File where sensor data is logged  
 - **`Project_Presentation.pptx`**: PowerPoint presentation summarizing the project  
 - **`Project_Demo.mp4`**: A short video showing the system in action
@@ -66,7 +66,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
    - Use Arduino IDE to upload `Final_Project.ino` to the Teensy microcontroller.
 
 3. **Start the Raspberry Pi Script:**
-   - Execute `data_processing.py` to receive data, publish it to MQTT, and handle alerts.
+   - Execute `raspbeery_pi_teensy.py` to receive data, publish it to MQTT, and handle alerts.
 
 4. **Monitor in AWS:**
    - Use the **AWS CloudWatch Dashboard** to monitor sensor data and receive real-time alerts.
