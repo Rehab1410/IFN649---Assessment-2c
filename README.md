@@ -38,7 +38,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
 ### 2. Raspberry Pi Code
 - **`raspbeery_pi_teensy.py`**:  
   - Receives sensor data from Teensy over Bluetooth  
-  - Logs sensor data to `sensor_data.csv`  
+  - Logs sensor data to `sensor_data_log.csv`  
   - Publishes data to **AWS IoT Core** via MQTT  
   - Subscribes to MQTT topics to receive commands and forwards them to Teensy
 
@@ -51,7 +51,7 @@ The system provides instant alerts through a **buzzer** and AWS notifications wh
 
 - **`Final_Project.ino`**: Arduino code for Teensy microcontroller  
 - **`raspbeery_pi_teensy.py`**: Raspberry Pi script for data logging, MQTT publishing, and command forwarding  
-- **`sensor_data.csv`**: File where sensor data is logged  
+- **`sensor_data_log.csv`**: File where sensor data is logged  
 - **`Project_Presentation.pptx`**: PowerPoint presentation summarizing the project  
 - **`Project_Demo.mp4`**: A short video showing the system in action
 
