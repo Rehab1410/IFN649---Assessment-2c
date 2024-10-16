@@ -87,10 +87,10 @@ int readShockSensor() {
   if (shockState == HIGH) {
     delay(debounceTime);  // Debounce delay
     if (digitalRead(SHOCK_SENSOR_PIN) == HIGH) {
-      return 0;  // no Shock detected
+      return 1;  // Shock detected
     }
   }
-  return 1;  //  shock detected
+  return 0;  // no shock detected
 }
 
 // Function to check for incoming Bluetooth commands to control the buzzer
