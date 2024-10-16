@@ -77,8 +77,8 @@ with open('sensor_data.csv', 'a', newline='') as csvfile:
                         heart_rate = int(incoming_data.split("Heart Rate: ")[1].split(" ")[0])  # Extract heart rate value
                         sensor_data["heart_rate"] = heart_rate
                         if heart_rate < 40 or heart_rate > 120:  # Example thresholds for abnormal heart rate
-                            
-                            print("Abnormal heart rate detected")
+                            buzzer_on = True  # Activate buzzer for abnormal heart rate
+                            print("Abnormal heart rate detected, activating buzzer.")
                     except ValueError:
                         print("Error parsing heart rate")
                 
@@ -87,8 +87,8 @@ with open('sensor_data.csv', 'a', newline='') as csvfile:
                         shock_detected = int(incoming_data.split("Shock Detected: ")[1].strip())  # Extract shock detected value
                         sensor_data["shock_detected"] = shock_detected
                         if shock_detected == 1:  # Shock detected condition
-                            
-                            print("Shock detected")
+                            buzzer_on = True  # Activate buzzer for shock detected
+                            print("Shock detected, activating buzzer.")
                     except ValueError:
                         print("Error parsing shock detection")
 
