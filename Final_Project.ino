@@ -71,8 +71,7 @@ void loop() {
 // Function to read temperature from DS18B20
 float readTemperature() {
   sensors.requestTemperatures();    // Request temperature from sensor
-  float temp = sensors.getTempCByIndex(0);
-  return temp + 12.0; // Get the temperature in Celsius
+  return sensors.getTempCByIndex(0); // Get the temperature in Celsius
 }
 
 // Function to read heart rate from the heartbeat sensor
